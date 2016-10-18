@@ -7,7 +7,7 @@ header {
 }
 
 .wrapper {
-  width: 1170px;
+  max-width: 1170px;
   margin: 0 auto;
 }
 
@@ -90,7 +90,7 @@ header .menu li {
 }
 
 #contact {
-  width: 1170px;
+  width: 100%;
   height: 117px;
   margin: 0 auto;
   margin-top: 30px;
@@ -110,4 +110,37 @@ header .menu li {
 .contactf a {
   color: #666666;
   font-size: 14px;
+}
+@media (max-width: 320px) {
+    .phone{
+      margin-left: 10px;
+    }
+    .login{
+      margin-right:10px;
+    }
+  .logo{
+    max-width: 100%;
+    float: none;
+    margin-left: 77px;
+  }
+  .search{
+    margin-top: 10px;
+    float: none;
+  }
+  .menu li{
+  display: none;
+    float: none;
+    padding-left: 20px;
+  }
+  header {
+    height: 350px;
+  }
+  #contact {
+    width: auto;
+    height: 70px;
+    line-height: 70px;
+  }
+  .first{
+    font-size: 15px;
+  }
 }
